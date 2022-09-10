@@ -27,9 +27,6 @@ def unwrapp_query_result(records: List) -> None:
         print(*record)
 
 def get_invoice_items() -> None:
-    '''
-    d
-    '''
     query_sql = f'''
             SELECT sum(UnitPrice * Quantity)
                 FROM invoice_items;
